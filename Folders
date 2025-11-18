@@ -1,0 +1,17 @@
+aws-cloud-security-monitoring-lab/
+│
+├── architecture/
+│     └── aws-cloud-security-diagram.png
+│
+├── documentation/
+│     ├── cloudtrail-setup-notes.md
+│     ├── s3-bucket-policy.md
+│     └── project-walkthrough.md
+│
+├── scripts/
+│     ├── create-cloudtrail.sh
+│     ├── s3-policy.json
+│     └── verify-logs.sh
+│
+├── README.md
+└── .gitignore
