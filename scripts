@@ -1,1 +1,27 @@
-scripts/.keep
+#Commands Used (CLI)
+
+#Configure CLI:
+
+aws configure
+aws sts get-caller-identity
+
+--
+#Create S3 bucket:
+
+aws s3api create-bucket --bucket security-logs-<timestamp>
+
+--
+#Add CloudTrail bucket policy:
+
+aws s3api put-bucket-policy --bucket BUCKETNAME --policy file://policy.json
+
+--
+#Create and start CloudTrail:
+
+aws cloudtrail create-trail --name my-security-trail --s3-bucket-name BUCKETNAME
+aws cloudtrail start-logging --name my-security-trail
+
+--
+#Confirm CloudTrail:
+
+aws cloudtrail get-trail-status --name my-security-trail
