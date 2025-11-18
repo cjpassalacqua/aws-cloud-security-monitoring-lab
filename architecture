@@ -1,1 +1,18 @@
-architecture/.keep
+User (IAM Admin)
+      │
+      ├── AWS Console (MFA)
+      │
+      └── AWS CLI ───────────────┐
+                                 │
+                                 ▼
+                         AWS CloudTrail
+                                 │
+                                 ▼
+                        S3 Log Storage Bucket
+                                 │
+        ┌────────────────────────┴────────────────────────┐
+        │                                                 │
+        ▼                                                 ▼
+  GuardDuty (Threat Detection)*                 Security Hub (Compliance)*
+                                                     ▼
+                                           IAM Access Analyzer*
