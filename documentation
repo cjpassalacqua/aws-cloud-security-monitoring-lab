@@ -2,6 +2,7 @@
 
 This project demonstrates a foundational AWS security monitoring environment designed to simulate real-world cloud security operations. It includes identity hardening, centralized logging, CLI-based management, and preparation for threat detection and compliance scanning using AWS native tools.
 
+--
 #Objectives
 
 Establish secure AWS administration using IAM, MFA, and least privilege.
@@ -9,6 +10,8 @@ Configure centralized, auditable logging with CloudTrail + S3.
 Prepare AWS-native threat detection tools (GuardDuty, Security Hub).
 Use AWS CLI to automate setup and validate configuration.
 Document architecture and controls to mirror actual cloud security workflows.
+
+--
 #Services Used
 
 IAM – MFA, admin user, secure root governance
@@ -18,3 +21,13 @@ AWS CLI – Terminal-based configuration and automation
 GuardDuty
 Security Hub
 IAM Access Analyzer
+
+--
+#Key Features
+
+Strong identity security through IAM admin user + enforced MFA.
+Root account locked down and converted to emergency-only use.
+CloudTrail trail created via AWS CLI with a secure bucket policy.
+Logs stored privately with bucket-owner-only permissions.
+CLI verified with aws sts get-caller-identity.
+Environment structured to support SOC-style monitoring once GuardDuty/Security Hub are activated.
