@@ -31,3 +31,28 @@ CloudTrail trail created via AWS CLI with a secure bucket policy.
 Logs stored privately with bucket-owner-only permissions.
 CLI verified with aws sts get-caller-identity.
 Environment structured to support SOC-style monitoring once GuardDuty/Security Hub are activated.
+
+--
+#Skills Demonstrated
+
+AWS Identity & Access Management
+Multi-factor authentication
+CloudTrail configuration & validation
+Secure S3 storage policies
+Command-line cloud automation
+Cloud security architecture documentation
+Threat detection readiness
+Realistic entry-level cloud security workflows
+#Next Steps (Planned Enhancements)
+
+Enable and configure GuardDuty
+Enable Security Hub controls (CIS AWS Foundations)
+Enable IAM Access Analyzer
+Add automated remediation checks
+Add CloudWatch metric alarms
+Add attack simulations (IAM brute force, unusual API calls)
+
+--
+#About This Project
+
+This is part of my cloud security portfolio as I transition into Cloud Security Support and AWS security roles. The project mirrors how security teams set up foundational visibility, identity hardening, and threat detection pipelines in a new AWS environment.
